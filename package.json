@@ -1,0 +1,40 @@
+{
+  "name": "rails-react-redux-webpacker-boiler",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "joey grisafe <jgrisafe@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "coffee-loader": "^0.7.3",
+    "coffee-script": "^1.12.4",
+    "glob": "^7.1.1",
+    "path-complete-extname": "^0.1.0",
+    "rails-erb-loader": "^3.2.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1",
+    "webpack-merge": "^3.0.0"
+  },
+  "dependencies": {
+    "babel-preset-stage-2": "^6.22.0",
+    "react": "^15.4.2",
+    "react-bootstrap": "^0.30.7",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "react-router": "^3.0.2",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.6.0",
+    "redux-logger": "^2.8.2",
+    "redux-thunk": "^2.2.0"
+  }
+}
