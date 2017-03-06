@@ -4,7 +4,7 @@ import { Provider, connect } from 'react-redux'
 
 import configureStore from '../../store/configureStore'
 
-import HomeContainer from '../Home'
+import PageWrapper from '../PageWrapper'
 
 const store = configureStore()
 
@@ -22,7 +22,7 @@ class App extends Component {
 }
 
 const routes = (
-  <Route path="/" component={HomeContainer}>
+  <Route path="/" component={PageWrapper}>
 
   </Route>
 )

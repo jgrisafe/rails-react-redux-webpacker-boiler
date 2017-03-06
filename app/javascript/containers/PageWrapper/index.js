@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 
 import test from '../../actions/test'
 
-class Home extends Component {
+class PageWrapper extends Component {
 
   componentDidMount() {
     const { dispatch } = this.props
@@ -21,4 +21,4 @@ class Home extends Component {
   }
 }
 
-export default connect()(Home);
+export default connect()(PageWrapper);
