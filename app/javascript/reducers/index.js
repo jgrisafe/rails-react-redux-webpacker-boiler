@@ -1,2 +1,5 @@
 import test from './test'
-export default [ test ]
+
+// add reducer imports above
+
+export default { test } // put reducers into export object

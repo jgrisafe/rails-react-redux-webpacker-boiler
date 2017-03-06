@@ -1,9 +1,17 @@
 import HomeRoute from './routes/HomeRoute'
+import PageWrapper from './containers/PageWrapper'
+
 
 export default {
   // Application container component
-  component: App,
+  component: PageWrapper,
   childRoutes: [
-    HomeRoute
+    { path: '/',
+      getComponent: (nextState, cb) => {
+        require.ensure([], (require) => {
+          cb(null, require('./containers/Home').default)
+        })
+      },
+    }
   ],
 }
