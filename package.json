@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -w app/javascript/test/helpers/browser.js app/javascript/test/**/*.spec.js",
+    "test:watch": "mocha --watch --require app/javascript/test/helpers/browser.js app/javascript/test/**/*.spec.js"
   },
   "author": "joey grisafe <jgrisafe@gmail.com>",
   "license": "MIT",
@@ -16,11 +17,17 @@
     "babel-loader": "^6.3.2",
     "babel-preset-latest": "^6.22.0",
     "babel-preset-react": "^6.23.0",
+    "chai": "^3.5.0",
     "coffee-loader": "^0.7.3",
     "coffee-script": "^1.12.4",
+    "enzyme": "^2.7.1",
     "glob": "^7.1.1",
+    "jsdom": "^9.12.0",
+    "mocha": "^3.2.0",
     "path-complete-extname": "^0.1.0",
     "rails-erb-loader": "^3.2.0",
+    "react-addons-test-utils": "^15.4.2",
+    "sinon": "^2.1.0",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1",
     "webpack-merge": "^3.0.0"
