@@ -12,4 +12,6 @@ In the second tab run:
 1. `bundle install`
 2. `bin/rails server`
 
+React tests are located in `app/javascript/test`, in a third window run `npm run test:watch` to fire up the live test runner, mocha. Included libraries are jsdom, enzyme, chai, and sinon.
+
 That's it! You can no go to localhost:3000 to see your application.
