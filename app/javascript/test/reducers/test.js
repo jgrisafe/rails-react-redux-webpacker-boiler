@@ -1,0 +1,17 @@
+
+import { TEST } from '../constants'
+
+const initialState = { test: 'test' }
+
+export default function currentUser(state = initialState, action) {
+  const { type, payload } = action
+
+  switch (type) {
+    case TEST:
+      return {
+        test: 'action created!'
+      }
+    default:
+      return state
+  }
+}
