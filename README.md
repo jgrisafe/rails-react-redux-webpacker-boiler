@@ -21,4 +21,4 @@ OPTIONAL: USE WITH FOREMAN (no need for separate terminal tabs) the rails, webpa
 3. `npm install -g foreman`
 4. `nf start`
 
-That's it! You can no go to localhost:3000 to see your application.
+That's it! You can no go to localhost:3000 to see your application. (localhost:5100 if using foreman)
