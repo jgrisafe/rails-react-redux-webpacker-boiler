@@ -26,7 +26,12 @@ config = {
       {
         test: /\.js(\.erb)?$/,
         exclude: /node_modules/,
-        loader: 'babel-loader'
+        loader: 'babel-loader',
+        options: {
+          presets: [
+            [ 'latest', { 'es2015': { 'modules': false } } ]
+          ]
+        }
       },
       {
         test: /\.erb$/,

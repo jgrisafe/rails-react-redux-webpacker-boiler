@@ -8,3 +8,9 @@ export default function main(videoId, newComment) {
     type: TEST
   }
 }
+
+/* REQUEST HELPERS
+===============================================*/
+function getTestData() {
+  
+}

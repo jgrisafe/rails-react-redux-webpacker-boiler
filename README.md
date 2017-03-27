@@ -14,4 +14,11 @@ In the second tab run:
 
 React tests are located in `app/javascript/test`, in a third window run `npm run test:watch` to fire up the live test runner, mocha. Included libraries are jsdom, enzyme, chai, and sinon.
 
-That's it! You can no go to localhost:3000 to see your application.
+OPTIONAL: USE WITH FOREMAN (no need for separate terminal tabs) the rails, webpack, and mocha test outputs will appear inline:
+
+1. `yarn install`
+2. `bundle install`
+3. `npm install -g foreman`
+4. `nf start`
+
+That's it! You can no go to localhost:3000 to see your application. (localhost:5100 if using foreman)
