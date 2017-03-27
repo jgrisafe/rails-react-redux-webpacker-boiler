@@ -1,4 +1,4 @@
-
+import { fetch, headers } from '../utils/fetch'
 import { TEST } from '../constants'
 
 /* ACTIONS
@@ -12,5 +12,12 @@ export default function main(videoId, newComment) {
 /* REQUEST HELPERS
 ===============================================*/
 function getTestData() {
-  
+  return dispatch => fetch(
+    '/api/v1/test',
+    {
+      method: 'GET',
+      headers: headers(),
+    }, 
+    dispatch
+  )
 }
