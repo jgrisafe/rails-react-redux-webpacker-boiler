@@ -1,4 +1,4 @@
-
+import { assoc } from 'ramda'
 import { TEST } from '../constants'
 
 const initialState = { test: 'test' }
@@ -8,9 +8,7 @@ export default function currentUser(state = initialState, action) {
 
   switch (type) {
     case TEST:
-      return {
-        test: 'action created!'
-      }
+      return assoc('test', payload.test, state)
     default:
       return state
   }

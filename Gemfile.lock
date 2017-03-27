@@ -1,4 +1,14 @@
 GIT
+  remote: https://github.com/rails-api/active_model_serializers.git
+  revision: a701777bd5b082e9348eb41d1d50a635acd81999
+  ref: a701777b
+  specs:
+    active_model_serializers (0.10.0)
+      actionpack (>= 4.1, < 6)
+      activemodel (>= 4.1, < 6)
+      railties (>= 4.1, < 6)
+
+GIT
   remote: https://github.com/rails/webpacker.git
   revision: 7aaaecae04c9f60f895f339221f5bb805ffc54bc
   specs:
@@ -163,6 +173,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_model_serializers!
   byebug
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
