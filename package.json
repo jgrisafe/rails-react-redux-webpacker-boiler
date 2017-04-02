@@ -7,8 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha -w app/javascript/test/helpers/browser.js app/javascript/test/**/*.spec.js",
-    "test:watch": "mocha --watch --require app/javascript/test/helpers/browser.js app/javascript/test/**/*.spec.js"
+    "test": "mocha --require 'app/javascript/test/helpers/browser.js' 'app/javascript/test/**/*.spec.js' --recursive",
+    "test:watch": "mocha --watch --require 'app/javascript/test/helpers/browser.js' 'app/javascript/test/**/*.spec.js' --recursive"
   },
   "author": "joey grisafe <jgrisafe@gmail.com>",
   "license": "MIT",
